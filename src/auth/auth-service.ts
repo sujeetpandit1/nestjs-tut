@@ -12,7 +12,7 @@ export class AuthService {
   ) {}
 
   async validateUser(signInData: signIndataValidation) {
-    // Validate user credentials here, for example:
+    // Validate user credentials here, for example: need to be followed
     const user = await this.usersService.signin(signInData);
     if (user) {
       return user;
